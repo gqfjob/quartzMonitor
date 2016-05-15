@@ -125,7 +125,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.5</version>
-			<scope>runtime</scope>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- log4j -->
@@ -157,19 +157,19 @@
 			<groupId>org.apache.openejb</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>5.0-1</version>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 	<build>
