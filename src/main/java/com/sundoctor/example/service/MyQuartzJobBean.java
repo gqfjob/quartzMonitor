@@ -30,7 +30,7 @@ public class MyQuartzJobBean extends QuartzJobBean {
 
 		// 根据Trigger组别调用不同的业务逻辑方法
 		if (StringUtils.equals(group, Scheduler.DEFAULT_GROUP)) {
-			simpleService.testMethod(triggerName, group);
+			//simpleService.testMethod(triggerName, group);
 		} else {
 			simpleService.testMethod2(triggerName, group);
 		}

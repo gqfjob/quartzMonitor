@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<sql-query name="test">
+		<!-- <return alias="customer" class="com.sundoctor.example.model.Customert"></return> -->
+		<return-scalar column="age" type="integer"/>
+		<return-scalar column="email" type="string"/>
+		<return-scalar column="name" type="string"/>
+		<![CDATA[
+		select t.age,t.name,t.email from customer t where 1=1 { and t.id = :id }
+		
+		]]>
+	</sql-query>
+	<query name="testHql">
+		<![CDATA[
+			from Customer
+		
+		]]>
+	</query>
+</hibernate-mapping>
+
+  
+
